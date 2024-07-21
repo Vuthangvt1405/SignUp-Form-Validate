@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'ws-italic';
+    src: url('./font/WorkSans-Italic.woff2') format('woff2'),
+        url('./font/WorkSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ws-regular';
+    src: url('./font/WorkSans-Regular.woff2') format('woff2'),
+        url('./font/WorkSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ws-Bold';
+    src: url('./font/WorkSans-Bold.woff2') format('woff2'),
+        url('./font/WorkSans-Bold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ws-SemiBold';
+    src: url('./font/WorkSans-SemiBold.woff2') format('woff2'),
+        url('./font/WorkSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.wsR{
+    font-family: "ws-Regular";
+}
+
+.wsI{
+    font-family: "ws-italic"
+}
+
+.wsSB{
+    font-family: "ws-SemiBold";
+}
+
+.wsB{
+    font-family: "ws-Bold";
+}
+
+*{
+    font-size: 16px;
+}
+
+.container{
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.title{
+    margin-right: 50px;
+    width: 500px;
+    height: 100px;
+}
+
+.title-main{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 22px;
+}
+
+.title-description{
+    color: white;
+}
+
+.coupon{
+    background-color: hsl(248, 32%, 49%) ;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 6px rgba(0, 0, 0, .2) ;
+}
+
+.form-action{
+    padding: 26px;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.form-control{
+    padding: 22px;
+    margin: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.form-control:focus{
+    outline: none;
+    border: 1px solid hsl(248, 32%, 49%)
+}
+
+.submit{
+    text-align: center;
+    border: 0;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    cursor: pointer
+}
+
+.term{
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#errorPassword,
+#lastnameErrorMessage,
+#emailErrorMessage,
+#firstnameErrorMessage{
+    text-align: right;
+    padding: 2px 12px 12px;
+    color: red;
+}
+
+.red{
+    border: 2px solid red;
+}
+
+.red:focus{
+    border: 2px solid red;
+}
+
+.success{
+    display: none;
+    text-align: center;
+    color: rgb(87, 87, 245);
+    padding:12px;
+}
+
+.show{
+    display: block;
+}
